@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="slider-container">
+      <div class="slider">
         <header class="main-header">
           <div class="left-block">
             <img class="main-logo" src="img/main-logo.png" alt="Gllacy Shop" width="111" height="111">
@@ -33,7 +33,7 @@
           </div>
           <div class="user-block">
             <div class="search">
-              <a href="#"></a>
+              <a href="#">Поиск</a>
               <div class="search-form">
                 <form action="/" method="post">
                   <input type="text" name="search" placeholder="Что ищем?">
@@ -61,7 +61,7 @@
             <b>8 812 450-25-25</b>
           </div>
 
-          <div class="slider">
+          <div class="slider-container">
             <div class="slider-controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
@@ -70,15 +70,15 @@
             <div class="slider-inner">
               <div class="slider-slides">
                 <div class="slider1">
-                  <span class="slider-info">Крем-брюле и пломбир с малиновым джемом</span>
+                  <div class="slider-info">Крем-брюле и пломбир с малиновым джемом</div>
                   <a href="#" class="btn slider-button">Давайте оба!</a>
                 </div>
                 <div class="slider2">
-                  <span class="slider-info">Шоколадный пломбир и лимонный сорбет</span>
+                  <div class="slider-info">Шоколадный пломбир и лимонный сорбет</div>
                   <a href="#" class="btn slider-button">Давайте оба!</a>
                 </div>
                 <div class="slider3">
-                  <span class="slider-info">Пломбир с помадкой и клубничный щербет</span>
+                  <div class="slider-info">Пломбир с помадкой и клубничный щербет</div>
                   <a href="#" class="btn slider-button">Давайте оба!</a>
                 </div>
               </div>
@@ -141,15 +141,17 @@
               <h2>Новое в нашем блоге</h2>
               <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
             </div>
-            <section class="card subscribe">
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-              <form action="/" method="post">
-                <input type="email" id="email" name="email" placeholder="Электронная почта" required>
-      				  <input class="btn" type="submit" value="Отправить">
-              </form>
-      			</section>
+            <div class="card subscribe">
+              <div class="subscribe-background">
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                <form action="/" method="post">
+                  <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+        				  <input class="btn" type="submit" value="Отправить">
+                </form>
+              </div>
+      			</div>
           </div>
-          <figure class="map">
+          <div class="map">
             <div class="contacts">
               Адрес главного офиса и<br>
               офлайн магазина:<br>
@@ -159,37 +161,40 @@
               <b>8 812 450-25-25</b><br>
               (с 10 до 20 ежедневно)
               <a class="btn" href="#">Форма обратной связи</a>
-              <div class="contact-form">
-                <form action="/" method="post">
-                  <h2>Мы обязательно Вам ответим!</h2>
-                  <input type="text" name="name" placeholder="Как Вас зовут?">
-                  <input type="email" name="email" placeholder="Ваша почта для ответа?">
-                  <textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
-                  <button class="send-btn btn" type="submit">Отправить</button>
-                  <a href="#">Закрыть</a>
-                </form>
-              </div>
             </div>
-          </figure>
+          </div>
         </main>
+
         <footer class="main-footer">
-          <section class="footer-social">
+          <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          </section>
-          <section class="footer-links">
+          </div>
+          <div class="footer-links">
             <a href="#">Для поставщиков</a>
             <a href="#">Наши документы</a>
             <a href="#">О производстве</a>
             <a href="#">Экологические стандарты</a>
-          </section>
-          <section class="footer-copyright">
+          </div>
+          <div class="footer-copyright">
             <img src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="111" height="111">
             Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy ©</a> 2016
-          </section>
+          </div>
         </footer>
+
+        <div class="contact-form">
+          <form action="/" method="post">
+            <h2>Мы обязательно Вам ответим!</h2>
+            <input type="text" name="name" placeholder="Как Вас зовут?">
+            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+            <textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="send-btn btn" type="submit">Отправить</button>
+            <button class="close-btn btn" type="submit">Закрыть</button>
+          </form>
+        </div>
+
       </div>
     </div>
   </body>
