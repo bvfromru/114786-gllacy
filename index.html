@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+  
   <body>
     <div class="container">
       <div class="slider">
-        <header class="main-header">
+
+
+
+        <header class="main-header  clearfix">
+
           <div class="left-block">
             <img class="main-logo" src="img/logo.png" alt="Gllacy Shop" width="153" height="63">
             <nav class="main-nav">
@@ -32,8 +39,9 @@
               </ul>
             </nav>
           </div>
+
           <div class="user-block">
-            <div class="search">
+            <!-- <div class="search">
               <a href="#">Поиск</a>
               <div class="search-form">
                 <form action="/" method="post">
@@ -55,15 +63,16 @@
             </div>
             <div class="cart">
               <a href="#">Пусто</a>
-            </div>
+            </div> -->
           </div>
+
           <div class="phone">
             С 10 до 20, ежедневно
             <b>8 812 450-25-25</b>
           </div>
 
           <div class="slider-container">
-            <div class="slider-controls">
+            <!-- <div class="slider-controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
               <label for="btn-3"></label>
@@ -83,12 +92,16 @@
                   <a href="#" class="btn slider-button">Давайте оба!</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </header>
+
+
+
         <main>
-          <div class="card-container">
+
+          <div class="card-container  clearfix">
             <section class="card promo-raspberry">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -100,29 +113,30 @@
               <a class="btn" href="#">Хочу шоколадки!</a>
             </section>
           </div>
-          <section class="catalog">
-            <div class="catalog-item">
+
+          <section class="catalog clearfix">
+            <div class="catalog-item  hit">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
               </div>
               <span class="item-price">310 Р/кг</span>
               <a class="item-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
-            <div class="hits-item">
+            <div class="catalog-item  hit">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-cofee-chocolade.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
               </div>
               <span class="item-price">380 Р/кг</span>
               <a class="item-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
-            <div class="hits-item">
+            <div class="catalog-item  hit">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
               </div>
               <span class="item-price">355 Р/кг</span>
               <a class="item-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
-            <div class="hits-item">
+            <div class="catalog-item  hit">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-cremebrulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267"></a>
               </div>
@@ -130,19 +144,21 @@
               <a class="item-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
           </section>
-          <article class="about">
+
+          <article class="about-container">
             <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
             <p class="about manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             <p class="about ingredients">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             <p class="about milk">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <p class="about transportation">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
           </article>
-          <div class="card-container">
-            <div class="card news">
+
+          <div class="card-container-bottom clearfix">
+            <div class="card-bottom news">
               <h2>Новое в нашем блоге</h2>
               <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
             </div>
-            <div class="card subscribe">
+            <div class="card-bottom subscribe">
               <div class="subscribe-background">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form action="/" method="post">
@@ -152,6 +168,7 @@
               </div>
       			</div>
           </div>
+
           <div class="map">
             <div class="contacts">
               Адрес главного офиса и<br>
@@ -164,7 +181,10 @@
               <a class="btn" href="#">Форма обратной связи</a>
             </div>
           </div>
+
         </main>
+
+
 
         <footer class="main-footer">
           <div class="footer-social">
@@ -185,7 +205,7 @@
           </div>
         </footer>
 
-        <div class="contact-form">
+        <!-- <div class="contact-form">
           <form action="/" method="post">
             <h2>Мы обязательно Вам ответим!</h2>
             <input type="text" name="name" placeholder="Как Вас зовут?">
@@ -194,7 +214,7 @@
             <button class="send-btn btn" type="submit">Отправить</button>
             <button class="close-btn btn" type="submit">Закрыть</button>
           </form>
-        </div>
+        </div> -->
 
       </div>
     </div>
