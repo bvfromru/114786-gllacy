@@ -203,8 +203,17 @@ h2 {
 }
 
 .pagination {
+  /*
+  ТАК БЫЛО
+
   float: right;
   width: 95%;
+  */
+
+
+  /*ТАК СТАЛО*/
+  margin-left: auto;
+
   margin-top: 60px;
   margin-right: 2.3%;
 
