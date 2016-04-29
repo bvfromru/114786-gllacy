@@ -30,16 +30,17 @@ h2 {
   font-weight: bold;
 }
 
-.container {
+.page-wrapper {
+
+
+}
+
+.page-container {
   max-width: 1200px;
   min-width: 900px;
   margin: 0 auto;
 
   background-color: rgba(222, 222, 222, 0.1);
-}
-
-.slider {
-
 }
 
 .main-header {
@@ -49,7 +50,7 @@ h2 {
 }
 
 .slider-container {
-  min-height: 647px;
+  min-height: 528px;
 }
 
 .left-block {
@@ -125,6 +126,25 @@ h2 {
   background-color: rgba(255, 222, 155, 0.2);
 }
 
+.filter-container {
+  float: left;
+  margin-right: 15px;
+}
+
+.price-range input {
+  max-width: 70px;
+}
+
+.filter-price {
+  /*max-width: 216px;*/
+}
+
+.scale {
+  width: 220px; /*Потом убрать*/
+  height: 36px; /*Потом убрать*/
+  background-color: rgba(55, 22, 15, 0.2);
+}
+
 .card-container {
   margin-bottom: 40px;
 }
@@ -148,15 +168,18 @@ h2 {
 
 
 .catalog {
-
+  font-size: 0;
 }
 
 .catalog-item {
-  float: left;
+  display: inline-block;
   width: 22.2%;
   min-height: 328px;
   margin-right: 2.2%;
   margin-bottom: 35px;
+  vertical-align: top;
+
+  font-size: 16px;
 
   background-color: rgba(2, 122, 255, 0.2);
 }
@@ -170,16 +193,22 @@ h2 {
   margin-right: 2.3%;
 }
 
+.item-image img {
+  width: 100%;
+  height: auto;
+}
+
 .item-description {
   font-size: 11px; /*Убрать потом*/
 }
 
 .pagination {
   float: right;
-  width: 950%;
+  width: 95%;
   margin-top: 60px;
   margin-right: 2.3%;
 
+  font-size: 16px;
   text-align: right;
 }
 
@@ -189,19 +218,30 @@ h2 {
 
 .about-container {
   min-height: 254px;
-  padding: 27px 21px;
   margin-bottom: 40px;
 
   background-color: rgba(122, 122, 255, 0.2);
 }
 
 .about-container h1 {
+  padding: 27px 21px;
   font-size: 11px; /*Убрать потом!*/
 }
 
-.about-container p {
-  font-size: 11px; /*Убрать потом!*/
-  margin: 0; /*Убрать потом!*/
+
+.about {
+  font-size: 0;
+  list-style-type: none;
+}
+
+.about li {
+  display: inline-block;
+  width: 473px;
+  padding-left: 75px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+
+  font-size: 16px;
 }
 
 .card-container-bottom {

@@ -7,68 +7,76 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  
+
   <body>
-    <div class="container">
-      <div class="slider">
+    <div class="page-wrapper">
+      <div class="page-container">
 
 
 
         <header class="main-header  clearfix">
 
-          <div class="left-block">
-            <img class="main-logo" src="img/logo.png" alt="Gllacy Shop" width="153" height="63">
-            <nav class="main-nav">
-              <ul>
-                <li>
-                  <a href="#">Каталог</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">Новинки</a></li>
-                      <li><a href="#">Сливочное</a></li>
-                      <li><a href="#">Щербеты</a></li>
-                      <li><a href="#">Фруктовый лед</a></li>
-                      <li><a href="#">Мелорин</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Доставка и оплата</a>
-                </li>
-                <li>
-                  <a href="#">О компании</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="header-top  clearfix">
+
+            <div class="left-block">
+              <img class="main-logo" src="img/logo.png" alt="Gllacy Shop" width="153" height="63">
+              <nav class="main-nav">
+                <ul>
+                  <li>
+                    <a href="catalog.html">Каталог</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Сливочное</a></li>
+                        <li><a href="#">Щербеты</a></li>
+                        <li><a href="#">Фруктовый лед</a></li>
+                        <li><a href="#">Мелорин</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Доставка и оплата</a>
+                  </li>
+                  <li>
+                    <a href="#">О компании</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="user-block">
+              <!-- <div class="search">
+                <a href="#">Поиск</a>
+                <div class="search-form">
+                  <form action="/" method="post">
+                    <input type="text" name="search" placeholder="Что ищем?">
+                  </form>
+                </div>
+              </div>
+              <div class="login">
+                <a href="#">Вход</a>
+                <div class="login-form">
+                  <form action="/" method="post">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <button class="login-btn btn" type="submit">Войти</button>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </form>
+                </div>
+              </div>
+              <div class="cart">
+                <a href="#">Пусто</a>
+              </div> -->
+            </div>
+
           </div>
 
-          <div class="user-block">
-            <!-- <div class="search">
-              <a href="#">Поиск</a>
-              <div class="search-form">
-                <form action="/" method="post">
-                  <input type="text" name="search" placeholder="Что ищем?">
-                </form>
-              </div>
-            </div>
-            <div class="login">
-              <a href="#">Вход</a>
-              <div class="login-form">
-                <form action="/" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <button class="login-btn btn" type="submit">Войти</button>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </form>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#">Пусто</a>
-            </div> -->
-          </div>
+          <div class="header-bottom  clearfix">
 
-          <div class="phone">
-            С 10 до 20, ежедневно
-            <b>8 812 450-25-25</b>
+            <div class="phone">
+              С 10 до 20, ежедневно
+              <b>8 812 450-25-25</b>
+            </div>
+
           </div>
 
           <div class="slider-container">
@@ -94,6 +102,7 @@
               </div>
             </div> -->
           </div>
+
 
         </header>
 
@@ -147,10 +156,12 @@
 
           <article class="about-container">
             <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-            <p class="about manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <p class="about ingredients">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <p class="about milk">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            <p class="about transportation">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+            <ul class="about">
+              <li class="manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="ingredients">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="milk">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+              <li class="transportation">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+            </ul>
           </article>
 
           <div class="card-container-bottom clearfix">
@@ -169,23 +180,23 @@
       			</div>
           </div>
 
-          <div class="map">
-            <div class="contacts">
-              Адрес главного офиса и<br>
-              офлайн магазина:<br>
-              <b>ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</b><br>
-              Для заказов по телефону:<br>
-              <b>8 812 450-25-25</b><br>
-              (с 10 до 20 ежедневно)
-              <a class="btn" href="#">Форма обратной связи</a>
-            </div>
-          </div>
-
         </main>
+      </div>
 
+      <div class="map">
+        <div class="contacts">
+          Адрес главного офиса и<br>
+          офлайн магазина:<br>
+          <b>ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург</b><br>
+          Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)
+          <a class="btn" href="#">Форма обратной связи</a>
+        </div>
+      </div>
 
-
+      <div class="page-container">
         <footer class="main-footer">
           <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
