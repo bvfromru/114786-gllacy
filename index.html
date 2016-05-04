@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,13 +20,13 @@
           <div class="header-top  clearfix">
 
             <div class="left-block">
-              <img class="main-logo" src="img/logo.png" alt="Gllacy Shop" width="153" height="63">
+              <img class="main-logo" src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
               <nav class="main-nav">
                 <ul>
                   <li>
                     <a href="catalog.html">Каталог</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Новинки</a></li>
+                        <li><a class="important" href="#">Новинки</a></li>
                         <li><a href="#">Сливочное</a></li>
                         <li><a href="#">Щербеты</a></li>
                         <li><a href="#">Фруктовый лед</a></li>
@@ -36,14 +37,14 @@
                     <a href="#">Доставка и оплата</a>
                   </li>
                   <li>
-                    <a href="#">О компании</a>
+                    <a href="#">О Компании</a>
                   </li>
                 </ul>
               </nav>
             </div>
 
-            <div class="user-block">
-              <!-- <div class="search">
+            <div class="user-block-container">
+              <div class="user-block  search">
                 <a href="#">Поиск</a>
                 <div class="search-form">
                   <form action="/" method="post">
@@ -51,7 +52,7 @@
                   </form>
                 </div>
               </div>
-              <div class="login">
+              <div class="user-block  login">
                 <a href="#">Вход</a>
                 <div class="login-form">
                   <form action="/" method="post">
@@ -63,9 +64,9 @@
                   </form>
                 </div>
               </div>
-              <div class="cart">
+              <div class="user-block  cart">
                 <a href="#">Пусто</a>
-              </div> -->
+              </div>
             </div>
 
           </div>
@@ -124,32 +125,32 @@
           </div>
 
           <section class="catalog clearfix">
-            <div class="catalog-item  hit">
+            <div class="catalog-item  hit  no-hover">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
               </div>
-              <span class="item-price">310 Р/кг</span>
+              <span class="item-price">310 &#8381/кг</span>
               <a class="item-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
-            <div class="catalog-item  hit">
+            <div class="catalog-item  hit  no-hover">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-cofee-chocolade.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
               </div>
-              <span class="item-price">380 Р/кг</span>
+              <span class="item-price">380 &#8381/кг</span>
               <a class="item-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
-            <div class="catalog-item  hit">
+            <div class="catalog-item  hit  no-hover">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
               </div>
-              <span class="item-price">355 Р/кг</span>
+              <span class="item-price">355  &#8381/кг</span>
               <a class="item-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
-            <div class="catalog-item  hit">
+            <div class="catalog-item  hit  no-hover">
               <div class="item-image">
                 <a href="#"><img src="img/creamy-cremebrulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267"></a>
               </div>
-              <span class="item-price">415 Р/кг</span>
+              <span class="item-price">415 &#8381/кг</span>
               <a class="item-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
           </section>
@@ -167,15 +168,17 @@
           <div class="card-container-bottom clearfix">
             <div class="card-bottom news">
               <h2>Новое в нашем блоге</h2>
-              <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+              <a href="#">10  способов сервировки<br>фруктовых щербетов<br>к столу</a>
             </div>
             <div class="card-bottom subscribe">
               <div class="subscribe-background">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-                <form action="/" method="post">
-                  <input type="email" id="email" name="email" placeholder="Электронная почта" required>
-        				  <input class="btn" type="submit" value="Отправить">
-                </form>
+                <div class="form-container">
+                  <form action="/" method="post">
+                    <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+          				  <input class="btn" type="submit" value="Отправить">
+                  </form>
+                </div>
               </div>
       			</div>
           </div>
@@ -185,34 +188,42 @@
 
       <div class="map">
         <div class="contacts">
-          Адрес главного офиса и<br>
-          офлайн магазина:<br>
-          <b>ул. Большая Конюшенная<br>
-          19/8, Санкт-Петербург</b><br>
-          Для заказов по телефону:<br>
-          <b>8 812 450-25-25</b><br>
-          (с 10 до 20 ежедневно)
+          <div class="contacts-address">
+            Адрес главного офиса и<br>
+            офлайн магазина:<br>
+            <b>ул. Большая Конюшенная<br>
+            19/8, Санкт-Петербург</b><br>
+          </div>
+          <div class="contacts-phone">
+            Для заказов по телефону:<br>
+            <b>8 812 450-25-25</b><br>
+            (с 10 до 20 ежедневно)
+          </div>
           <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </div>
 
       <div class="page-container">
-        <footer class="main-footer">
+        <footer class="main-footer  clearfix">
           <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           </div>
-          <div class="footer-links">
-            <a href="#">Для поставщиков</a>
-            <a href="#">Наши документы</a>
-            <a href="#">О производстве</a>
-            <a href="#">Экологические стандарты</a>
+          <div class="footer-links  clearfix">
+            <div class="footer-links-leftcol">
+              <a class="favorite" href="#">Для поставщиков</a>
+              <a href="#">О производстве</a>
+            </div>
+            <div class="footer-links-rightcol">
+              <a href="#">Наши документы</a>
+              <a href="#">Экологические стандарты</a>
+            </div>
           </div>
           <div class="footer-copyright">
             <img src="img/htmlacademy-logo.png" alt="HTML Academy" width="108" height="37">
-            Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy ©</a> 2016
+            Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2016
           </div>
         </footer>
 
