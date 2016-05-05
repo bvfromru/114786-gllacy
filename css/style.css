@@ -144,13 +144,13 @@ a:active {
    display: inline-block;
    vertical-align: top;
    margin-top: 20px;
+   padding-left: 15px;
 
    font-size: 0;
 }
 
-.main-nav ul {
+.main-nav>ul {
   margin: 0;
-  margin-left: 15px;
   padding: 0;
 
   list-style: none;
@@ -184,14 +184,14 @@ a:active {
 
 
 .main-nav a {
-  margin: 7px 14px 8px 14px;
+  padding: 7px 14px 8px 14px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .main-nav a:hover {
   margin: 0;
-  padding: 7px 14px 8px 14px;
+
   background-color: #f7f6f3;
   color: #333333;
   text-decoration: none;
@@ -221,7 +221,9 @@ a:active {
   border: none;
 }
 
-.main-nav .sub-menu {
+.sub-menu {
+  list-style: none;
+  display: none;
   position: absolute;
   top: 37px;
   left: -20px;
@@ -229,6 +231,10 @@ a:active {
   border-radius: 5px;
   padding: 5px 0;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main-nav li:hover .sub-menu {
+  display: block;
 }
 
 .sub-menu li {
@@ -256,7 +262,6 @@ a:active {
 
 .sub-menu .important {
   font-weight: bold;
-  border-bottom: 1px solid #d1d0ce;
 }
 
 .sub-menu a:hover {
