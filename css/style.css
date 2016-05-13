@@ -17,6 +17,21 @@ body
     content: '';
 }
 
+.clearfix-hr::after
+{
+    display: block;
+    width: 95.4%;
+    height: 1px;
+    margin: 0 auto 0 auto;
+    clear: both;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    content: '';
+}
+
+
+
 body > input[type='radio']
 {
     display: none;
@@ -29,6 +44,8 @@ h1
     line-height: 41px;
 
     margin-left: 2.3%;
+    margin-top: 0;
+    margin-bottom: 27px;
 }
 
 h2
@@ -67,7 +84,7 @@ a:hover
     font-weight: bold;
     line-height: 22px;
 
-    padding: 12px 24px;
+    padding: 12px 23px;
 
     cursor: pointer;
     text-decoration: none;
@@ -146,7 +163,7 @@ a:hover
 {
     position: relative;
 
-    padding-top: 270px;
+    padding-top: 273px;
 
     text-align: center;
 
@@ -166,14 +183,14 @@ a:hover
 
 .slider-button
 {
-    font-size: 31px;
+    font-size: 32px;
     font-weight: bold;
-    line-height: 41px;
+    line-height: 42px;
 
     display: inline-block;
 
     margin-bottom: 43px;
-    padding: 12px 50px;
+    padding: 10px 41px 12px 41px;
 
     vertical-align: top;
     text-decoration: none;
@@ -223,7 +240,7 @@ a:hover
 
     position: absolute;
     z-index: 20;
-    bottom: 25px;
+    bottom: 63px;
     left: 0;
 }
 
@@ -277,7 +294,7 @@ a:hover
 
     width: 575px;
     margin-top: 10px;
-    margin-left: -5px;
+    margin-left: -6px;
 }
 
 .main-logo
@@ -297,7 +314,7 @@ a:hover
     display: inline-block;
 
     margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 16px;
 
     vertical-align: top;
 }
@@ -320,7 +337,7 @@ a:hover
 
     display: inline-block;
 
-    margin-right: 2px;
+    margin-right: 1px;
 
     vertical-align: top;
 
@@ -355,7 +372,7 @@ a:hover
 {
     line-height: 18px;
 
-    padding: 7px 14px 8px 14px;
+    padding: 6px 14px 7px 13px;
 
     color: #fff;
     border-bottom: 0;
@@ -411,16 +428,16 @@ a:hover
 {
     position: absolute;
     z-index: 40;
-    left: -20px;
+    left: -8px;
 
     display: none;
 
-    padding-top: 16px;
+    padding-top: 14px;
 }
 
 .sub-menu
 {
-    padding: 5px 0;
+    padding: 6px 0;
 
     list-style: none;
 
@@ -473,6 +490,9 @@ a:hover
 .sub-menu .important:hover
 {
     font-weight: bold;
+
+    padding: 7px 14px 7px 14px;
+    margin-bottom: 3px;
 
     border-bottom: 1px solid #d1d0ce;
 }
@@ -545,9 +565,9 @@ a:hover
 {
     font-size: 0;
 
-    width: 33px;
-    height: 33px;
-    margin-right: 6px;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
 }
 
 .login a
@@ -556,9 +576,12 @@ a:hover
     padding: 8px 16px 8px 44px;
 }
 
-.cart a
+.cart > a
 {
-    padding: 8px 34px 8px 44px;
+    min-width: 56px;
+    padding: 8px 16px 8px 44px;
+
+    text-align: left;
 }
 
 .user-block > a::before
@@ -594,7 +617,7 @@ a:hover
 {
     position: absolute;
     z-index: 40;
-    right: 0;
+    right: 8px;
 
     display: none;
 
@@ -635,7 +658,7 @@ a:hover
 {
     position: absolute;
     z-index: 40;
-    right: 0;
+    right: 3px;
 
     display: none;
 
@@ -672,7 +695,7 @@ a:hover
     float: left;
 
     margin-right: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     margin-left: 18px;
 }
 
@@ -742,8 +765,8 @@ a:hover
     font-weight: bold;
     line-height: 18px;
 
-    min-width: 515px;
-    padding: 20px 16px 20px 16px;
+    min-width: 508px;
+    padding: 15px 16px 20px 15px;
 
     color: #333;
     border-radius: 6px;
@@ -762,8 +785,8 @@ a:hover
     font-weight: normal;
     line-height: 24px;
 
-    margin: 20px 24px;
-    padding: 11px 14px;
+    margin: 20px 17px 18px 18px;
+    padding: 8px 26px 10px 13px;
 
     color: #999;
     border: 1px solid #d3d3d2;
@@ -772,22 +795,22 @@ a:hover
 
 .user-block input[type='text']:hover
 {
-    padding: 10px 13px;
+    border: 1px solid #c7c6c5;
 
-    border: 2px solid #c7c6c5;
+    box-shadow: 0 0 0 1px #c7c6c5;
 }
 
 .user-block input[type='text']:focus
 {
-    padding: 10px 13px;
+    border: 1px solid #8fbdec;
 
-    border: 2px solid #8fbdec;
+    box-shadow: 0 0 0 1px #8fbdec;
 }
 
 .search-form input
 {
     width: 269px;
-    margin: 15px 20px;
+    margin: 20px 15px 20px 17px;
 }
 
 .cart-form a
@@ -809,8 +832,8 @@ a:hover
     font-weight: normal;
     line-height: 16px;
 
-    padding-right: 12px;
-    padding-bottom: 14px;
+    padding-right: 4px;
+    padding-bottom: 16px;
 
     text-align: left;
     vertical-align: middle;
@@ -850,8 +873,8 @@ a:hover
 .cart-form .item-delete::after
 {
     position: absolute;
-    top: 7px;
-    left: 0;
+    top: 6px;
+    left: -3px;
 
     width: 14px;
     height: 1px;
@@ -878,6 +901,7 @@ a:hover
     display: block;
 
     margin-bottom: 15px;
+    margin-right: -4px;
 
     text-align: right;
 }
@@ -886,7 +910,7 @@ a:hover
 {
     display: inline-block;
 
-    padding: 12px 20px;
+    padding: 11px 14px;
 
     color: #fff;
 }
@@ -924,6 +948,8 @@ a:hover
 
     min-width: 510px;
     padding: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
 
     list-style: none;
 }
@@ -939,8 +965,8 @@ a:hover
 
 .breadcrumbs li::after
 {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 6px;
+    margin-left: 6px;
 
     content: '»';
 }
@@ -952,8 +978,8 @@ a:hover
 
 .filter
 {
-    width: 73.2%;
-    margin-bottom: 40px;
+    width: 92%;
+    margin-bottom: 22px;
     margin-left: 2.3%;
 }
 
@@ -965,7 +991,7 @@ a:hover
 
     display: block;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     margin-left: 16px;
 }
 
@@ -992,11 +1018,15 @@ a:hover
     margin-right: 15px;
 }
 
+.filter-fatcontent {
+    margin-right: 0;
+}
+
 .filter-sort select
 {
     display: block;
 
-    padding: 9px 25px 10px 16px;
+    padding: 9px 31px 10px 16px;
 
     cursor: pointer;
 
@@ -1097,17 +1127,17 @@ a:hover
 
 .filter-price .toggle-min
 {
-    left: 44px;
+    left: 36px;
 }
 
 .filter-price .toggle-max
 {
-    left: 143px;
+    left: 133px;
 }
 
 .fatcontent-form
 {
-    padding: 0 17px 0 0;
+    padding: 0 10px 0 0;
 }
 
 .fatcontent-form input
@@ -1168,7 +1198,7 @@ a:hover
 
 .fillers-form
 {
-    padding: 0 17px 0 0;
+    padding: 0 19px 0 0;
 }
 
 .fillers-form input
@@ -1182,7 +1212,7 @@ a:hover
 
     display: inline-block;
 
-    padding: 9px 0 10px 47px;
+    padding: 9px 2px 10px 47px;
 
     cursor: pointer;
 }
@@ -1237,7 +1267,8 @@ a:hover
 .filter-btn
 {
     margin-top: 23px;
-    padding: 9px 29px 9px 29px;
+    margin-right: 120px;
+    padding: 9px 27px 7px 29px;
 
     box-shadow: 0 0 0 2px #f6f8f7;
 }
@@ -1267,7 +1298,7 @@ a:hover
     box-sizing: border-box;
     width: 46.6%;
     min-height: 230px;
-    padding: 21px;
+    padding: 15px 17px 17px 18px;
 
     border-radius: 14px;
 }
@@ -1275,8 +1306,8 @@ a:hover
 .card .btn
 {
     position: absolute;
-    right: 21px;
-    bottom: 21px;
+    right: 20px;
+    bottom: 25px;
 }
 
 
@@ -1315,7 +1346,7 @@ a:hover
 
     width: 22.2%;
     margin-right: 2.2%;
-    margin-bottom: 35px;
+    margin-bottom: 41px;
 
     text-align: center;
     vertical-align: top;
@@ -1354,6 +1385,7 @@ a:hover
 .item-image
 {
     position: relative;
+    margin-bottom: 6px;
 }
 
 .item-image a
@@ -1383,10 +1415,14 @@ a:hover
 
     position: absolute;
     z-index: 6;
-    bottom: 18px;
-    left: 0;
+    bottom: 12px;
+    left: 1px;
 
     text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+}
+
+.item-price-kg {
+  font-size: 30px;
 }
 
 .item-description
@@ -1464,9 +1500,7 @@ a:hover
     font-weight: 500;
     line-height: 27px;
 
-    margin-top: 60px;
-    margin-right: 2.3%;
-    margin-left: auto;
+    margin: 40px 1.5% 30px auto;
 
     list-style: none;
 
@@ -1477,8 +1511,8 @@ a:hover
 {
     display: inline-block;
 
-    width: 27px;
-    height: 27px;
+    width: 26px;
+    height: 26px;
 
     text-align: center;
     vertical-align: top;
@@ -1517,10 +1551,8 @@ a:hover
 
 .about-container
 {
-    margin-right: 2.3%;
-    margin-bottom: 40px;
-    margin-left: 2.3%;
-    padding: 20px 0;
+    margin: -4px 2.3% 40px 2.3%;
+    padding: 24px 0 22px 0;
 
     border-radius: 14px;
     background: #f0e4ce url('../img/about-background.jpg') repeat;
@@ -1560,7 +1592,7 @@ a:hover
 
     box-sizing: border-box;
     width: 46.6%;
-    margin-top: 12px;
+    margin-top: 9px;
     margin-right: 2.2%;
     margin-left: 20px;
     padding-top: 15px;
@@ -1571,7 +1603,8 @@ a:hover
 
 .about li:nth-child(2n)
 {
-    margin-left: 0;
+    margin-left: 0px;
+    padding-left: 68px;
 }
 
 .about li::before
@@ -1584,6 +1617,11 @@ a:hover
 
     background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
+}
+
+.about li:nth-child(2n)::before
+{
+    left: 10px;
 }
 
 .manufacture::before
@@ -1637,7 +1675,7 @@ a:hover
 
     box-sizing: border-box;
     margin-left: 2.3%;
-    padding: 16px 20px;
+    padding: 22px 20px 16px 20px;
 
     color: #323232;
     background: #fff url('../img/news-background.jpg') no-repeat 100% 52%;
@@ -1655,11 +1693,16 @@ a:hover
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
+    text-decoration: underline;
 
     color: #353535;
     background-color: rgba(255, 255, 255, .8);
+    border: 0;
 }
 
+.news a:hover {
+    color: #d07058;
+}
 
 .subscribe
 {
@@ -1752,7 +1795,7 @@ a:hover
 .contacts
 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
 
     position: absolute;
     top: 50%;
@@ -1762,7 +1805,7 @@ a:hover
     width: 302px;
     min-height: 305px;
     max-height: 400px;
-    padding: 29px 24px 90px 24px;
+    padding: 27px 24px 90px 26px;
 
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -1781,10 +1824,10 @@ a:hover
 .contacts a
 {
     position: absolute;
-    bottom: 28px;
+    bottom: 33px;
     left: 50%;
 
-    width: 206px;
+    width: 204px;
 
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1902,7 +1945,7 @@ a:hover
     font-size: 13px;
     font-size: 0;
 
-    margin-top: 18px;
+    margin-top: 12px;
     margin-right: 25%;
     margin-left: 25%;
 
@@ -1926,7 +1969,7 @@ a:hover
 
 .footer-links .footer-links-leftcol
 {
-    margin-right: 27px;
+    margin-right: 31px;
 }
 
 .footer-links .favorite
