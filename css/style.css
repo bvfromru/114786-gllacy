@@ -1,3 +1,107 @@
+@-webkit-keyframes bounce
+{
+    0%
+    {
+        -webkit-transform: translateX(2000px);
+                transform: translateX(2000px);
+    }
+    70%
+    {
+        -webkit-transform: translateX(30px);
+                transform: translateX(30px);
+    }
+    90%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@keyframes bounce
+{
+    0%
+    {
+        -webkit-transform: translateX(2000px);
+                transform: translateX(2000px);
+    }
+    70%
+    {
+        -webkit-transform: translateX(30px);
+                transform: translateX(30px);
+    }
+    90%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes shake
+{
+    0%,
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80%
+    {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes shake
+{
+    0%,
+    100%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80%
+    {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+
+
 body
 {
     font-family: 'Roboto', 'Arial', 'sans-serif';
@@ -20,14 +124,15 @@ body
 .clearfix-hr::after
 {
     display: block;
+    clear: both;
+
     width: 95.4%;
     height: 1px;
     margin: 0 auto 0 auto;
-    clear: both;
-
-    background-color: rgba(255, 255, 255, 0.3);
 
     content: '';
+
+    background-color: rgba(255, 255, 255, .3);
 }
 
 
@@ -43,9 +148,9 @@ h1
     font-weight: bold;
     line-height: 41px;
 
-    margin-left: 2.3%;
     margin-top: 0;
     margin-bottom: 27px;
+    margin-left: 2.3%;
 }
 
 h2
@@ -491,8 +596,8 @@ a:hover
 {
     font-weight: bold;
 
-    padding: 7px 14px 7px 14px;
     margin-bottom: 3px;
+    padding: 7px 14px 7px 14px;
 
     border-bottom: 1px solid #d1d0ce;
 }
@@ -796,14 +901,12 @@ a:hover
 .user-block input[type='text']:hover
 {
     border: 1px solid #c7c6c5;
-
     box-shadow: 0 0 0 1px #c7c6c5;
 }
 
 .user-block input[type='text']:focus
 {
     border: 1px solid #8fbdec;
-
     box-shadow: 0 0 0 1px #8fbdec;
 }
 
@@ -900,8 +1003,8 @@ a:hover
 {
     display: block;
 
-    margin-bottom: 15px;
     margin-right: -4px;
+    margin-bottom: 15px;
 
     text-align: right;
 }
@@ -947,9 +1050,9 @@ a:hover
     float: left;
 
     min-width: 510px;
-    padding: 0;
     margin-top: 25px;
     margin-bottom: 0;
+    padding: 0;
 
     list-style: none;
 }
@@ -978,7 +1081,9 @@ a:hover
 
 .filter
 {
-    width: 92%;
+    font-size: 0;
+
+    width: 94%;
     margin-bottom: 22px;
     margin-left: 2.3%;
 }
@@ -1013,12 +1118,15 @@ a:hover
 
 .filter-container
 {
-    float: left;
+    display: inline-block;
 
     margin-right: 15px;
+
+    vertical-align: top;
 }
 
-.filter-fatcontent {
+.filter-fatcontent
+{
     margin-right: 0;
 }
 
@@ -1266,9 +1374,12 @@ a:hover
 
 .filter-btn
 {
-    margin-top: 23px;
-    margin-right: 120px;
-    padding: 9px 27px 7px 29px;
+    display: inline-block;
+
+    margin-top: 22px;
+    padding: 8px 27px 8px 29px;
+
+    vertical-align: top;
 
     box-shadow: 0 0 0 2px #f6f8f7;
 }
@@ -1298,7 +1409,7 @@ a:hover
     box-sizing: border-box;
     width: 46.6%;
     min-height: 230px;
-    padding: 15px 17px 17px 18px;
+    padding: 15px 17px 60px 18px;
 
     border-radius: 14px;
 }
@@ -1318,7 +1429,7 @@ a:hover
 
     margin-left: 2.3%;
 
-    background: #a81132 url('../img/promo-raspberry-background.jpg') no-repeat 0 52%;
+    background: #a81132 url('../img/promo-raspberry-background.jpg') repeat-y 0 52%;
 }
 
 .promo-chocolate
@@ -1327,7 +1438,7 @@ a:hover
 
     margin-right: 2.3%;
 
-    background: #3c241a url('../img/promo-chocolate-background.jpg') no-repeat 0 47%;
+    background: #3c241a url('../img/promo-chocolate-background.jpg') repeat-y 0 47%;
 }
 
 
@@ -1385,6 +1496,7 @@ a:hover
 .item-image
 {
     position: relative;
+
     margin-bottom: 6px;
 }
 
@@ -1421,8 +1533,9 @@ a:hover
     text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
 }
 
-.item-price-kg {
-  font-size: 30px;
+.item-price-kg
+{
+    font-size: 30px;
 }
 
 .item-description
@@ -1603,7 +1716,7 @@ a:hover
 
 .about li:nth-child(2n)
 {
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 68px;
 }
 
@@ -1663,8 +1776,8 @@ a:hover
 
 .card-bottom
 {
+    box-sizing: border-box;
     width: 46.6%;
-    min-height: 220px;
 
     border-radius: 15px;
 }
@@ -1673,7 +1786,7 @@ a:hover
 {
     float: left;
 
-    box-sizing: border-box;
+    min-height: 220px;
     margin-left: 2.3%;
     padding: 22px 20px 16px 20px;
 
@@ -1686,6 +1799,8 @@ a:hover
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
+
+    margin-bottom: 4px;
 }
 
 .news a
@@ -1693,14 +1808,16 @@ a:hover
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
+
     text-decoration: underline;
 
     color: #353535;
-    background-color: rgba(255, 255, 255, .8);
     border: 0;
+    background-color: rgba(255, 255, 255, .8);
 }
 
-.news a:hover {
+.news a:hover
+{
     color: #d07058;
 }
 
@@ -1709,14 +1826,14 @@ a:hover
     float: right;
 
     margin-right: 2.3%;
+    padding: 5px;
 
     background: #f8f7f4 url('../img/subscribe-background.jpg') repeat;
 }
 
 .subscribe-background
 {
-    min-height: 86px;
-    margin: 5px;
+    margin: 0;
     padding: 12px 20px 35px 20px;
 
     border-radius: 10px;
@@ -1729,7 +1846,8 @@ a:hover
     font-weight: normal;
     line-height: 22px;
 
-    margin-bottom: 30px;
+    min-height: 86px;
+    margin-bottom: 12px;
 
     color: #5a5a5a;
 }
@@ -1738,7 +1856,7 @@ a:hover
 {
     position: relative;
 
-    padding-right: 150px;
+    padding-right: 140px;
 }
 
 .subscribe input[type='email']
@@ -1748,7 +1866,8 @@ a:hover
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    padding: 11px 14px;
+    margin-top: 3px;
+    padding: 10px 14px;
 
     color: #999;
     border: 1px solid #d3d3d2;
@@ -1758,10 +1877,11 @@ a:hover
 .subscribe input[type=submit]
 {
     position: absolute;
-    top: -1px;
+    top: 2px;
     right: 0;
 
     margin: 0;
+    padding: 11px 19px;
 }
 
 .map
@@ -2006,10 +2126,9 @@ a:hover
     display: none;
 
     width: 430px;
+    margin-top: -221px;
+    margin-left: -215px;
     padding: 20px 25px;
-
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
 
     color: #000;
     border-radius: 10px;
@@ -2177,6 +2296,9 @@ a:hover
 .popup-content-show
 {
     display: block;
+
+    -webkit-animation: bounce .6s;
+            animation: bounce .6s;
 }
 
 .popup-overlay-show
